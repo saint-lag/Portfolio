@@ -11,7 +11,7 @@ export const runtime = 'nodejs';
 export default async function Contacts({
 	searchParams: { customUsername },
 }) {
-
+	const GABRIELMAIAOFICIAL = data.socials.linkedin.handle
 	const username = customUsername || process.env.GITHUB_USERNAME || data.githubUsername;
 	// Get both user and socials in parallel.
 	const userData = getUser(username);
@@ -42,7 +42,7 @@ export default async function Contacts({
 					href: s.url,
 					label: s.provider,
 					// Extract last aprt of the url.
-					handle: s.url.split("/").pop(),
+					handle: GABRIELMAIAOFICIAL,
 				});
 				break;
 			default:
@@ -57,6 +57,7 @@ export default async function Contacts({
 				break;
 		}
 	});
+
 
 	return (
 		<div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
@@ -82,7 +83,7 @@ export default async function Contacts({
 										{s.icon}
 									</span>{" "}
 									<div className="z-10 flex flex-col items-center">
-										<span className={`whitespace-nowrap text-xl font-medium duration-150 lg:text-3xl text-zinc-200 group-hover:text-white font-display ${emailTransform}`}>
+										<span className={`whitespace-nowrap duration-150 lg:text-2xl text-zinc-200 group-hover:text-white font-display ${emailTransform}`}>
 											{s.handle}
 										</span>
 										<span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">

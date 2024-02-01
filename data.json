@@ -1,9 +1,12 @@
 {
-	"description": "My hobby projects, most of them are Nextjs apps deployed to Vercel.",
-	"githubUsername": "octocat",
-	"avatarUrl": "",
-	"displayName": "",
-	"email": "",
+	"description": "Web Developer | Technical Writer | Data Analyst",
+	"githubUsername": "saint-lag",
+	"avatarUrl": "https://github.com/saint-lag.png",
+	"displayName": "Gabriel Maia",
+	"email": "maiasena.gabriel@gmail.com",
+	"socials": {
+		"linkedin": {"handle": "gabrielmaiaoficial"}
+	},
 	"projects": {
 		"blacklist": [],
 		"heroNames": []
