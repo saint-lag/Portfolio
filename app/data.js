@@ -5,7 +5,6 @@ const MINUTES_5 = 60 * 5;
 const HOURS_1 = 60 * 60;
 const HOURS_12 = 60 * 60 * 12;
 
-// TODO: Implement option to switch between info for authenticated user and other users.
 export async function getUser(username) {
 	console.log('Fetching user data for', username);
 	console.time('getUser');
@@ -148,7 +147,9 @@ export const getRecentUserActivity = cache(async (username) => {
 	const res = await fetch('https://api.github.com/users/' + username + '/events', {
 		headers: { Authorization: `Bearer ${process.env.GH_TOKEN}` },
 	});
+	console.log(process.env.GH_TOKEN);
 	const response = await res.json();
+	console.log('Recent activity for', username, response);
 	console.timeEnd('getRecentUserActivity');
 	return response;
 }, HOURS_12);

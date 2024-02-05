@@ -9,8 +9,12 @@ const nextConfig = {
 		GITHUB_USERNAME: 'saint-lag'
 	},
 	images: {
+		domains: ['raw.githubusercontent.com', 'github.com'],
 		remotePatterns: [
-			{ protocol: 'https', hostname: '**.githubusercontent.com' },
+			{ 
+				protocol: 'https', 
+				hostname: '**.githubusercontent.com', 
+			},
 			{ protocol: 'https', hostname: '**.github.com' }
 		],
 	},
