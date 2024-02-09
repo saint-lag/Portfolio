@@ -7,6 +7,7 @@ import { RecentActivity } from "./components/recent-activity";
 import { getUser } from "./data";
 
 const navigation = [
+  { name: "Cases", href: "/cases" },
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
 ];

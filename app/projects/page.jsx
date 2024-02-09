@@ -68,10 +68,7 @@ export default async function ProjectsPage() {
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
             Projects
           </h2>
-          <p className="mt-4 text-zinc-400">
-            {data.description}
-            {/* <pre>{JSON.stringify(vercelProjects.projects[1], null, 4)}</pre> */}
-          </p>
+          <p className="mt-4 text-zinc-400">{data.description}</p>
         </div>
 
         {heroes.length ? (
@@ -128,17 +125,6 @@ export default async function ProjectsPage() {
             ))}
           </div>
         </div>
-
-        {/* TODO: Shows user's recent activity as a GitHub timeline */}
-        {/* <div className="max-w-2xl mx-auto lg:mx-0">
-                    <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-                        <MarkGithubIcon size={48} /> Activity
-                    </h2>
-                    <p className="mt-4 text-zinc-400">
-                        My recent GitHub activity. Displaying up to 10 events.
-                    </p>
-                    {/* <UserTimeline recentUserActivity={recentUserActivity} /> */}
-        {/* </div> */}
       </div>
     </div>
   );
