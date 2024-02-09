@@ -1,0 +1,16 @@
+{
+    "donut": {
+    "width": "589",
+    "height": "402",
+    "src": "samples/dessert-on-a-plate",
+    "sizes": "100vw",
+    "alt": "Description of my image"
+  },
+    "sample": {
+        "width": "329",
+        "height": "132",
+        "src": "cld-sample-5",
+        "sizes": "100vw",
+        "alt": "Description of my image"
+    }
+}
